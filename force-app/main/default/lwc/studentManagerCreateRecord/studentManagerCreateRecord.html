@@ -1,0 +1,12 @@
+<template>
+    <div class="main">
+        <h1 class="StudentManager">Student Manager</h1>
+        <div class="card">
+            <h2>Add Student</h2>
+            <div class="cardinputs">
+                <input type="text" placeholder="Name" value={name} oninput={nameValue}><input type="number" value={age} placeholder="Age" class="age" oninput={ageValue}><input type="text" placeholder="Grade" value={grade} class="Grade" oninput={gradeValue}>
+                <button onclick={addStu}>Add</button>
+            </div>
+        </div>
+    </div>
+</template>

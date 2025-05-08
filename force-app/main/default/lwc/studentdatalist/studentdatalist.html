@@ -1,0 +1,22 @@
+<template>
+    <div class="main">
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Grade</th>
+                <th>Age</th>
+            </tr>
+            <template if:true={studatatable}>
+             <template for:each={studatatable} for:item="stuObj">
+                 <tr key={stuObj.Id}>
+                    <td>{stuObj.Id}</td>
+                    <td>{stuObj.Name}</td>
+                    <td>{stuObj.Grade__c}</td>
+                    <td>{stuObj.Age__c}</td>
+                 </tr>
+             </template>
+            </template>
+        </table>
+    </div>
+</template>
